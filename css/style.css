@@ -1,6 +1,8 @@
+body{
+
+}
 .logo {
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 800;
     font-size: 18px;
     line-height: 24px;
@@ -9,41 +11,45 @@
 .logo-part{
     color: #4D5AE5;
 }
-
+li {
+    list-style: none;
+}
 .nav-link{
     color: #2E2F42;
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    list-style: none;
-    text-decoration: none;
-}
-.contact-link{
-    color: #434455;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    list-style: none;
     text-decoration: none;
 }
 .link{
-    list-style: none;
     text-decoration: none;
 }
-.link :hover {
+.link :hover, link:focus {
     text-decoration: underline;
     color:#4D5AE5;
 }
+.contact-link-item {
+    color: #434455;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px; 
+    text-decoration: none;
+}
+.contact-link{
+    text-decoration: none;
+}
+.contact-link:hover{
+    color: #4D5AE5;
+    text-decoration: none;
+}
+/*Герой*/
 .hero{
     background-color: #2E2F42;;
 }
 h1{
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 56px;
     line-height: 60px;
@@ -58,10 +64,81 @@ h1{
 }
 .text-order{
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
     text-align: center;
+}
+/*Якості*/
+h2{
+    color: #2E2F42;
+    font-family: 'Roboto';    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+}
+h3{
+    color: #2E2F42;
+    font-family: 'Roboto';    
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+.item{
+    color: #434455;
+    font-family: 'Roboto';    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.point-text{
+
+}
+/*Що ми робимо*/
+
+/*Наша команда*/
+.team{
+   background-color:  #F4F4FD;
+}
+.team-function{
+    color:#434455;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/*2 стр*/
+/*Фільтр*/
+.filter-btn {
+    color: #4D5AE5;
+    background-color: #F4F4FD;
+    font-family: 'Roboto';    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.filter-btn :hover {
+    color: #FFFFFF;
+    background-color: #404BBF;
+}
+/*Футер*/
+.footer{
+    background-color: #2E2F42;;
+}
+.bottom{
+    color: #F4F4FD;
+    font-family: 'Raleway';    
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+}
+.tagline{
+    color: #E7E9FC;
+    font-family: 'Roboto';    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 }
