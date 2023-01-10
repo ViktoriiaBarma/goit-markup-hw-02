@@ -10,15 +10,18 @@ body{
     color:  var(--headers-color, grey);
     background-color: var(--back-color, white);
 }
+.container{
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 a{
     text-decoration: none;
 }
 li {
     list-style: none;
 }
-.top-line{
-   
-}
+
 .logo {
     font-family: 'Raleway';
     font-weight: 800;
@@ -51,6 +54,9 @@ li {
     color: var(--brand-color,purple);
     text-decoration: none;
 }
+.section{
+    padding: 0 156px 120px;
+}
 /*Герой*/
 .hero{
     background-color: var(--headers-color,grey);
@@ -61,6 +67,8 @@ li {
     color: var(--back-color, white);
     letter-spacing: 0.02em;
     text-align: center;
+    width: 494px;
+    border: 1px solid #fff;
 }
 .order{
     background-color: var(--brand-color, purple);
