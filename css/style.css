@@ -21,7 +21,19 @@ a{
 li {
     list-style: none;
 }
-
+.top-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    margin: 24px 332px 24px 76px;
+   
+}
 .logo {
     font-family: 'Raleway';
     font-weight: 800;
@@ -30,19 +42,28 @@ li {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--headers-color, grey);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 24px 76px 24px 15px;
 }
 .logo-part{
     color: var(--brand-color, purple);
 }
-
 .nav-link{
     color: inherit;    
     font-weight: 500;  
     line-height: 1.5; 
     letter-spacing: 0.02em;
 }
+
 .nav-link:hover, .nav-link:focus{
     color: var(--brand-color, purple);
+}
+.contact-links{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 .contact-link{
     color: var(--text-color, grey);          
@@ -50,12 +71,15 @@ li {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+.contact-link{
+    margin-right: 40px;
+}
 .contact-link:hover, .contact-link:focus{
     color: var(--brand-color,purple);
     text-decoration: none;
 }
 .section{
-    padding: 0 156px 120px;
+    
 }
 /*Герой*/
 .hero{
