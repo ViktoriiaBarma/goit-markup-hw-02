@@ -12,9 +12,10 @@ body{
 }
 .container{
     width: 1158px;
-    margin: 0 auto;
     padding: 0 15px;
+    margin: 0 auto;
 }
+  
 a{
     text-decoration: none;
 }
@@ -22,16 +23,15 @@ li {
     list-style: none;
 }
 .top-line{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+   
+   
+    align-content: center;
+    outline:2px solid black;
 }
 .nav-links{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0;
-    margin: 24px 332px 24px 76px;
+ margin: 24px 332px 24px 191px;
+ padding: 0;
+outline:2px solid red;
    
 }
 .logo {
@@ -42,15 +42,12 @@ li {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--headers-color, grey);
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin: 24px 76px 24px 15px;
 }
 .logo-part{
     color: var(--brand-color, purple);
 }
 .nav-link{
+    display: inline-block;
     color: inherit;    
     font-weight: 500;  
     line-height: 1.5; 
@@ -61,18 +58,14 @@ li {
     color: var(--brand-color, purple);
 }
 .contact-links{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    
 }
+
 .contact-link{
     color: var(--text-color, grey);          
     font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.02em;
-}
-.contact-link{
-    margin-right: 40px;
 }
 .contact-link:hover, .contact-link:focus{
     color: var(--brand-color,purple);
@@ -91,8 +84,9 @@ li {
     color: var(--back-color, white);
     letter-spacing: 0.02em;
     text-align: center;
-    width: 494px;
     border: 1px solid #fff;
+    margin-top: 0;
+    margin-bottom: 48px;
 }
 .order{
     background-color: var(--brand-color, purple);
@@ -113,18 +107,23 @@ li {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-top: 0;
+    margin-bottom: 72px;
 }
 .section-sub-title{        
     font-weight: 500;
     font-size: 20px;   
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-top: 32px;
+    margin-bottom: 8px;
 }
 
 .section-text{
     color: var(--text-color,grey);
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 32px;
 }
 /*Що ми робимо*/
 
@@ -149,9 +148,15 @@ li {
     color: #E7E9FC;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin: top 16px;
 }
 /*2 стр*/
 /*Фільтр*/
+.section-btn{
+    margin-top: 96px;
+    margin-bottom: 72px;
+    padding-left: 0;
+}
 .section-btn .btn {
     color: var(--brand-color, purple);
     background-color: #F4F4FD;       
@@ -160,9 +165,13 @@ li {
     text-align: center;
     letter-spacing: 0.04em;
     cursor: pointer;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
 }
 
 .section-btn .btn:hover, .btn:focus {
     color: #FFFFFF;
     background-color: #404BBF;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
 }
