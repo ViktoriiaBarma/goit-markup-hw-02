@@ -22,50 +22,77 @@ a{
 li {
     list-style: none;
 }
-.top-line{
-   
-   
-    align-content: center;
-    outline:2px solid black;
+.line{
+    display: flex;
+   align-items: center;
+    justify-content: space-between;
 }
-.nav-links{
- margin: 24px 332px 24px 191px;
- padding: 0;
-outline:2px solid red;
-   
+.secondary-line{
+    display: flex;
 }
 .logo {
+    display: block;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
     font-family: 'Raleway';
     font-weight: 800;
-    font-size: 18px;   
-    line-height: 1.33; 
+    font-size: 18px;
+    line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--headers-color, grey);
 }
-.logo-part{
+
+.logo-part {
     color: var(--brand-color, purple);
 }
+.nav-items{
+ margin: 24px 0 24px 76px;
+ padding: 0;
+ display: flex;
+}
+
+.nav-item:not(:last-child){
+    margin-right: 40px;
+}
+
+
 .nav-link{
-    display: inline-block;
+    display: block;
+
+
     color: inherit;    
     font-weight: 500;  
     line-height: 1.5; 
     letter-spacing: 0.02em;
+
 }
 
 .nav-link:hover, .nav-link:focus{
     color: var(--brand-color, purple);
 }
 .contact-links{
-    
+    display: flex;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.contact-item+.contact-item{
+    margin-left: 40px;
 }
 
 .contact-link{
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
     color: var(--text-color, grey);          
     font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.02em;
+
 }
 .contact-link:hover, .contact-link:focus{
     color: var(--brand-color,purple);
@@ -79,14 +106,17 @@ outline:2px solid red;
     background-color: var(--headers-color,grey);
 }
 .hero-title{
+    margin-top: 0;
+    margin-bottom: 48px;
+    border: 1px solid #fff;
+
     font-size: 56px;
     line-height: 1.07;
     color: var(--back-color, white);
     letter-spacing: 0.02em;
     text-align: center;
-    border: 1px solid #fff;
-    margin-top: 0;
-    margin-bottom: 48px;
+
+
 }
 .order{
     background-color: var(--brand-color, purple);
@@ -102,28 +132,33 @@ outline:2px solid red;
 }
 /*Якості*/
 .section-title{
+    margin-top: 0;
+    margin-bottom: 72px;
+
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    margin-top: 0;
-    margin-bottom: 72px;
+
 }
-.section-sub-title{        
+.section-sub-title{ 
+    margin-top: 32px;
+    margin-bottom: 8px;
+
     font-weight: 500;
     font-size: 20px;   
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-top: 32px;
-    margin-bottom: 8px;
 }
 
 .section-text{
+    margin-bottom: 32px;
+
     color: var(--text-color,grey);
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-bottom: 32px;
+
 }
 /*Що ми робимо*/
 
@@ -145,10 +180,12 @@ outline:2px solid red;
 }
 
 .tagline {
+    margin-top 16px;
+
     color: #E7E9FC;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin: top 16px;
+
 }
 /*2 стр*/
 /*Фільтр*/
@@ -173,5 +210,5 @@ outline:2px solid red;
     color: #FFFFFF;
     background-color: #404BBF;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-        border-radius: 4px;
+    border-radius: 4px;
 }
