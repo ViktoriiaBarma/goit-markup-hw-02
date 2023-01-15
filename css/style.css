@@ -255,6 +255,8 @@ li {
     margin-top: 96px;
     margin-bottom: 72px;
     padding-left: 0;
+    display: flex;
+    
 }
 .section-btn .btn {
     color: var(--brand-color, purple);
